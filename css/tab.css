@@ -1,0 +1,427 @@
+@media (min-width:768px) and (max-width:1079px){
+
+  img{
+    object-fit: cover;
+    width: 100%;
+    height:100%;
+   
+  }
+
+  /* 배경 와프 */
+.bg_wrap{
+    /* background-image: url(../img/KakaoTalk_20231108_173406951.jpg); */
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  .img_box_sc{
+ width: 100rem;
+ height: 158rem;
+ position: absolute;
+ bottom: 0;
+ left: -380px;
+  }
+.title_box{
+  position: absolute;
+  left: 50%;
+  bottom: 15%;
+  width: 70vw;
+  height:50vw;
+  margin-left: -35vw;
+  z-index: 99999;
+  display: none;
+  background-image: url('../img/title_box.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.title{
+  font-family: 'Indie Flower', cursive;
+  font-size: 3rem;
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  text-align: center;
+}
+
+  .menu_but{
+    width: 250px;
+    height: 150px;
+    float: right;
+    right: 3%;
+    z-index:9999;
+    position: fixed;
+  }
+  .top_menu{
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    top: 5%;
+    left: 40%;
+  }
+  .top_menu_wrap{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+.ca{
+  width: 160px;
+  height: 135px;
+}
+  .menu_jack{
+    width: 42px;
+    height: 60px;
+    position: absolute;
+    top: 27%;
+    left: 40%;
+  }
+
+
+.menu_but:hover .top_menu {
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+}
+
+.sub_menu{
+  width: 35%;
+  height:100%;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: 'Nanum Brush Script', cursive;
+  
+} 
+ .menu_1,.menu_2,.menu_3{
+  width: 100%;
+  height: 33%;
+  line-height: 3rem;
+}
+.menu_but:hover .sub_menu li{
+  background-color:lightgray;
+  opacity: 0.7;
+  border-bottom: 3px solid gray;
+  box-sizing: border-box;
+}
+.menu_but:hover .sub_menu{
+  display: block;}
+
+/* main 와프 */
+  .main_wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  width: 100%;
+height: 100%;}
+
+  /* 페이지 구성*/
+  /* 공통사항 */
+.page{
+  position: relative;
+}
+.box{
+  width:100%;
+  height: 76%;
+  background: url(../img/cloud_box_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 9999;
+  position: absolute;
+  top: 3%;
+  display: none;
+  /* border: #333 solid 10px; */
+}
+/* .box:nth-child(1){
+  top:30%
+} */
+  
+.jack_1{
+  width: 8vw;
+  height: 10vw;
+position: fixed;
+top: 38%;
+right: 7%;
+  z-index: 9999999;
+  background-image: url(../img/jack.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: none;
+  }
+  .monster{
+    width: 20vw;
+    height: 20vh;
+    position: fixed;
+    top: 40%;
+    right: 6%;
+    background-image: url(../img/monster.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: none;
+    z-index: 9999999;
+  }  
+
+  /* 1페이지 */
+
+  .aboutme,.contact{
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Nanum Brush Script', cursive;
+    position: absolute;
+    top: 18%;
+    text-align: center;
+    /* margin: 50px; */
+    background: url(../img/cloud_box_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+      }
+
+.abouttext{
+  /* width: 80%;
+  height: 32%; */
+  font-size: 30px;
+  line-height:58px;
+  color: #494848;
+  text-align: center;
+  /* border: green 5px solid; */
+}
+.con_1_wrap,.con_2_wrap{
+  display: none;
+}
+
+  /*-------------- 2페이지------------- */
+.pc_po{
+  display: none;
+}
+.con_2_wrap{
+  display: none;
+}
+.Portfolio{
+  width: 80%;
+  height: 80%;
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: 'Nanum Brush Script', cursive;
+  position: absolute;
+  top: 19%;
+  text-align: center;
+}
+.tab_po{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* 로고 구름 */
+.tab_logo_box{
+  width: 100%;
+  height: 500px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+ 
+}
+.mo_logo{
+  position: absolute;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  width: 350px;
+  height: 254px;
+}
+
+.ml_1{ 
+  
+  animation-name: example_1;
+  top: 0;
+  left: 0;
+  animation-timing-function: ease-in-out;
+
+      }
+.ml_2{
+ 
+  animation-name: example_2;
+  top: 0%;
+  left:350px;
+  animation-timing-function: ease-in-out;
+
+}
+.ml_3{
+  animation-name: example_3;
+  top: 97%;
+  left: 0%;
+  animation-timing-function: ease-in-out;
+}
+.ml_4{
+ 
+  animation-name: example_4;
+  top: 108%;
+  left:250px;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes example_1 {
+  0%   { left:0px; top:0px;}
+  25%  { left:40px; top:20px;}
+  50%  { left:30px; top:20px;}
+  75%  { right:20px; bottom:15px;}
+  100% { left:0px; top:0px;}
+}
+@keyframes example_2 {
+  0%   { left:420px; top:0;}
+  25%  { left:450px; top:10px;}
+  50%  { left:410px; top:13px;}
+  75%  { right:430px; top:5px;}
+  100% { left:420px; top:0}
+}
+@keyframes example_3 {
+  0%   { left:0px; top:250px;}
+  25%  { left:20px; top:280px;}
+  50%  { left:30px; top:250px}
+  75%  { right:20px; top:280px;}
+  100% { left:0px; top:250px;}
+}
+@keyframes example_4 {
+  0%   { left:410px; top:250px;}
+  25%  { left:440px; top:280px;}
+  50%  { left:410px; top:250px;}
+  75%  { right:440px; top:260px;}
+  100% { left:410px; top:250px;}
+}
+
+/* 포폴 관련 팝업 */
+.po_link{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgb(233, 229, 229);
+  display: none;
+  font-family: 'Nanum Brush Script', cursive;
+  font-size: 40px;
+  font-weight: 800;
+  padding: 30px;
+  box-sizing: border-box;
+  z-index: 9999999;
+}
+.but_close{
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 30px;
+  text-align: center;
+  position: absolute;
+  bottom: 30px;
+  right: 50%;
+  margin-right: -25px;
+  border: 2px solid #333;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.po_1,.po_2,.po_3,.po_4{
+ display: none;
+ width: 100%;
+ height: 90%;
+ padding-top: 50px;
+ box-sizing: border-box;
+}
+
+.link_text{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.left{
+ 
+  width: 35vw;
+  height: 72vh;
+  float: left;
+  line-height: 50px;
+  /* padding-left: 1.8rem; */
+  padding-top: 2rem;
+  /* box-sizing: border-box; */
+  font-size: 1.8rem;
+ 
+}
+.link_logo{
+  width: 127px;
+  height: 50px;
+}
+.link_logo_1{
+  width: 113px;
+  height: 72px;
+}
+.link_logo_2{
+  width: 200px;
+  height: 77px;
+}
+.po_le_text{
+  line-height: 2rem;
+  font-size: 1.4rem;
+  color: #565555;
+}
+.right{
+  /* border: 2px solid rgb(202, 123, 123); */
+  width: 50vw;
+  height: 72vh;
+  float: left;
+}
+.right img{
+  object-fit: contain;
+}
+
+ /* 3페이지 */
+ .mo_contanc_text{
+  display: none;
+ }
+ 
+ .land{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  /* border: purple 3px solid; */
+}
+
+.house{
+  width: 20vw;
+  height: 15vw;
+  position: absolute;
+  bottom: 60px;
+  left: 80px;
+  display: none;
+}
+
+.goods{
+  width: 20%;
+  /* height:13%; */
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  left: 40%;
+  
+}
+.bag,.paper{
+  width: 30%;
+  height: 70%;
+}
+ .paper:hover{
+  transform: scale(1.6);
+}
+.bag:hover{
+  transform: scale(1.6);
+}
+
+
+}

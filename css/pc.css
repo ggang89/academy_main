@@ -1,0 +1,357 @@
+@media all and (min-width:1080px){
+
+  img{
+    object-fit: cover;
+    width: 100%;
+    height:100%;
+  }
+
+  /* 배경 */
+  .bg_wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  .img_box_sc{
+ width: fit-content;
+ height: 100%;
+ position: absolute;
+ 
+ left:-210px
+  }
+.title_box{
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  margin-left: -300px;
+  margin-bottom:-250px;
+  width: 620px;
+  height: 500px;
+  z-index: 99999;
+  display: none;
+  background-image: url('../img/title_box.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.title{
+  font-family: 'Indie Flower', cursive;
+  font-size: 5rem;
+  position: absolute;
+  width: 100%;
+  top: 38%;
+  text-align: center;
+}
+
+  .menu_but{
+    width: 600px;
+    height: 200px;
+    float: right;
+    right: 0;
+    z-index:9999;
+    position: fixed;
+  }
+  .top_menu{
+    width: 390px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -90px;
+    margin-left: 33px;
+
+  }
+  
+  
+.ca{
+  width: 250px;
+  height: 202px;
+}
+  .menu_jack{
+    width: 48px;
+    height: 73px;
+    position: absolute;
+    top: 48%;
+    left: 20%;
+  }
+
+
+.menu_but:hover .top_menu {
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+}
+
+.sub_menu{
+  width: 200px;
+  height:200px;
+  display: none;
+  position: absolute;
+  left:93px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: 'Nanum Brush Script', cursive;
+}
+.menu_1,.menu_2,.menu_3{
+  width: 100%;
+  height: 33%;
+  line-height: 70px;
+}
+.menu_but:hover .sub_menu li{
+  background-color:lightgray;
+  opacity: 0.7;
+  border-bottom: 3px solid gray;
+  box-sizing: border-box;
+}
+.menu_but:hover .sub_menu{
+  display: block;}
+
+/* main */
+  .main_wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  width: 100%;
+height: 100%;}
+
+  /* 페이지 구성*/
+  /* 공통사항 */
+.page{
+  position: relative;
+}
+.box{
+  width:80%;
+  height: 80%;
+  background: url(../img/cloud_box_1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 9999;
+  position: absolute;
+  top: 10%;
+  display: none;
+  /* border: #333 solid 10px; */
+}
+  
+.jack_1{
+  width: 120px;
+  height:120px;
+  /* position: absolute; */
+  position: fixed;
+  top: 28%;
+  right: 8%;
+  background-image: url(../img/jack.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: none;
+  }
+  .monster{
+    width: 20vw;
+    height: 20vh;
+    position: fixed;
+    top: 40%;
+    right: 8%;
+    background-image: url(../img/monster.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: none;
+  }  
+
+  /* 1페이지 */
+
+  .aboutme,.contact{
+    width: 85%;
+    height: 80%;
+    font-size: 45px;
+    line-height: 30px;
+    font-weight: 900;
+    font-family: 'Nanum Brush Script', cursive;
+    position: absolute;
+    top: 19%;
+    /* left: -6%; */
+    text-align: center;
+    background: url(../img/cloud_box_1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+    
+      }
+
+.abouttext{
+  width: 100%;
+  /* height: 60%; */
+  font-size: 33px;
+  line-height: 60px;
+  color: #565555;
+  text-align: center;
+  /* border: green 5px solid; */
+}
+.con_1_wrap,.con_2_wrap{
+  display: none;
+}
+
+  /* --------------2페이지 */
+  
+.pc_po{
+  height: 100%;
+}
+.tab_po{
+  display: none;
+}
+.Portfolio{
+  width: 100%;
+  height: 23%;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 900;
+  font-family: 'Nanum Brush Script', cursive;
+  position: absolute;
+  top: 14%;
+  left: -4%;
+  text-align: center;
+}
+
+/* 2페이지 내 포트폴리오 로고 박스 */
+.p_wrap{
+  display: flex;
+  justify-content:space-between;      
+  /* border: #333 10px solid; */
+  width: 50vw;
+  height: 10vw;
+  position: absolute;
+  left: 17%;
+}
+.p_box{
+  /* border: 1px slateblue solid; */
+  width: 20%;
+  height: 95%;
+  text-align: center;
+}
+.p_box:hover{
+  transform: scale(1.2);
+}
+
+/* 포폴 설명 상자 */
+.po_link{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgb(237, 244, 246);
+  display: none;
+  font-family: 'Nanum Brush Script', cursive;
+  font-size: 2.5rem;
+  font-weight: 800;
+  padding: 50px;
+  box-sizing: border-box;
+  z-index: 9999999;
+  
+}
+.but_close{
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 50px;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  right: 50%;
+  margin-right: -25px;
+  border: 2px solid #333;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.po_1,.po_2,.po_3,.po_4{
+ /* position: absolute;
+ top: 24px;
+ left: 57px; */
+ width: 100%;
+ height: 80%;
+}
+
+.link_text{
+  width: 100%;
+  margin-bottom: 50px;
+}
+.left{
+  width: 33vw;
+  float: left;
+  line-height: 60px;
+   padding-top: 46px;
+   box-sizing: border-box;
+  /* font-size: 38px; */
+  text-align: center;
+ 
+}
+.link_logo{
+  width: 127px;
+  height: 50px;
+}
+.link_logo_1{
+  width: 113px;
+  height: 72px;
+}
+.link_logo_2{
+  width: 200px;
+  height: 77px;
+}
+.po_le_text{
+  line-height: 2.3rem;
+  font-size: 27px;
+  color: #565555;
+}
+.right{
+  /* border: 2px solid rgb(202, 123, 123); */
+   width: 49vw;
+  height: 75%;
+  float: left;
+  margin-top: 17px;
+  /* margin-left: 100px; */
+}
+.right>img{
+  object-fit: cover;
+}
+/* 포폴 설명 상자 끝 */
+
+ /* 3페이지 */
+
+ .mo_contanc_text{
+  display: none;
+ }
+ .land{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  /* border: purple 3px solid; */
+}
+
+.house{
+  width: 20vw;
+  height: 15vw;
+  position: absolute;
+  bottom: 60px;
+  left: 80px;
+  display: none;
+}
+
+.goods{
+  width: 150px;
+  height:13%;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  left: 45%;
+  
+}
+.bag,.paper{
+  width: 58px;
+  height: 50px;
+}
+ .paper:hover{
+  transform: scale(1.6);
+}
+.bag:hover{
+  transform: scale(1.6);
+}
+
+}
