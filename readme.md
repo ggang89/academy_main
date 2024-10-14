@@ -35,9 +35,11 @@
      <img src="./img/mouse_3.png" width="100px">   
 
 2. 성장하는 나무를 통한 동적인 모습 전달   
-   * Illustrator 작업  
- <img src="./img/mo_tree.png" height="200px"/>
-<img src="./img/readmeImg/tree.JPG" height="200px"/> 
+   * Illustrator 작업
+     | <img src="./img/mo_tree.png" height="200px"/>| <img src="./img/readmeImg/tree.JPG" height="200px"/> |
+     |---|---|
+
+
 
 3. 학원에서 만든 **다른 포트폴리오**를 소개
     * 2page에서 함께 만들었던 포트폴리오의 정보 확인 가능
